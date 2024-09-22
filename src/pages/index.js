@@ -1,8 +1,16 @@
 import Head from "next/head";
-import Image from "next/image";
 import styles from "@/styles/Home.module.css";
+import SearchBar from "@/components/searchBar";
+import TopRated from "@/components/topRated";
+import ForYou from "@/components/forYou";
 
 export default function Home() {
+  //array momentaneo per vedere qualcosa
+  const books = [
+    { title: "To Kill a Mockingbird", author: "Harper Lee" },
+    { title: "1984", author: "George Orwell" },
+    { title: "Pride and Prejudice", author: "Jane Austen" },
+  ];
   return (
     <>
       <Head>
@@ -12,7 +20,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div>
-        <main className={styles.main}></main>
+        <main className={styles.main}>
+          <SearchBar />
+          <TopRated books={books} />
+          <ForYou books={books} />
+        </main>
       </div>
     </>
   );

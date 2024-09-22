@@ -3,4 +3,13 @@
   margin: 0 auto;
   box-sizing: border-box;
   text-decoration: none;
+  max-width: 640px;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  list-style: none;
 }

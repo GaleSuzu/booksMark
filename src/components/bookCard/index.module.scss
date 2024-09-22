@@ -1,0 +1,12 @@
+.singleBook {
+  margin: 4px;
+  cursor: pointer;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+  border-radius: 2px;
+  padding: 2px;
+
+  &:hover {
+    transform: scale(1.03);
+    transition: 0.3s ease;
+  }
+}
